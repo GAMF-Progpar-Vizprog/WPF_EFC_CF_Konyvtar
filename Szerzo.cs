@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace KonyvtarWpf
+namespace WPF_EFC_CF_Konyvtar
 {
     /// <summary>
     /// Az "egy" oldal: egy szerzőnek több könyve lehet.

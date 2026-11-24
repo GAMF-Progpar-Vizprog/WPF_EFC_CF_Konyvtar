@@ -3,7 +3,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace KonyvtarWpf
+namespace WPF_EFC_CF_Konyvtar
 {
     public class cnKönyvtár : DbContext
     {

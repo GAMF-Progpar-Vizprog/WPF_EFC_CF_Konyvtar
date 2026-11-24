@@ -1,4 +1,4 @@
-namespace KonyvtarWpf
+namespace WPF_EFC_CF_Konyvtar
 {
     /// <summary>
     /// A "több" oldal: minden könyv pontosan egy szerzőhöz tartozik.

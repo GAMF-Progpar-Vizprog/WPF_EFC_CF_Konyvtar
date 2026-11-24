@@ -5,7 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Microsoft.EntityFrameworkCore;
 
-namespace KonyvtarWpf
+namespace WPF_EFC_CF_Konyvtar
 {
     public partial class wndFőablak : Window
     {

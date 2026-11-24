@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 
-namespace KonyvtarWpf
+namespace WPF_EFC_CF_Konyvtar
 {
     /// <summary>
     /// Könyv felvitele és módosítása. A főablak XAML-jében egyetlen példány van belőle.

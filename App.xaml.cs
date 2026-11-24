@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace KonyvtarWpf
+namespace WPF_EFC_CF_Konyvtar
 {
     public partial class App : Application
     {
