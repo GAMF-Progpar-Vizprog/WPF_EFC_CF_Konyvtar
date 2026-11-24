@@ -1,0 +1,47 @@
+<UserControl x:Class="KonyvtarWpf.ucKönyv"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="300">
+    <Border BorderBrush="#DDD" BorderThickness="1" Padding="16" CornerRadius="4"
+            HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="460">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label x:Name="lbCím" Grid.Row="0" Grid.Column="0" Content="_Cím:" Target="{Binding ElementName=tbCím}" />
+            <TextBox x:Name="tbCím" Grid.Row="0" Grid.Column="1" MaxLength="200" />
+
+            <Label x:Name="lbSzerző" Grid.Row="1" Grid.Column="0" Content="S_zerző:" Target="{Binding ElementName=cbSzerző}" />
+            <ComboBox x:Name="cbSzerző" Grid.Row="1" Grid.Column="1"
+                      DisplayMemberPath="Név" SelectedValuePath="Id" />
+
+            <Label x:Name="lbKiadásÉve" Grid.Row="2" Grid.Column="0" Content="Ki_adás éve:" Target="{Binding ElementName=tbKiadásÉve}" />
+            <TextBox x:Name="tbKiadásÉve" Grid.Row="2" Grid.Column="1" MaxLength="4" Width="80"
+                     HorizontalAlignment="Left" />
+
+            <Label x:Name="lbOldalszám" Grid.Row="3" Grid.Column="0" Content="_Oldalszám:" Target="{Binding ElementName=tbOldalszám}" />
+            <TextBox x:Name="tbOldalszám" Grid.Row="3" Grid.Column="1" MaxLength="5" Width="80"
+                     HorizontalAlignment="Left" />
+
+            <TextBlock x:Name="tblHiba" Grid.Row="4" Grid.ColumnSpan="2" Foreground="Firebrick"
+                       TextWrapping="Wrap" Margin="0,0,0,10" Visibility="Collapsed" />
+
+            <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0,6,0,0">
+                <Button x:Name="btMentés" Content="_Mentés" IsDefault="True" Click="btMentés_Click" />
+                <Button x:Name="btMégse" Content="Mé_gse" IsCancel="True" Click="btMégse_Click" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
